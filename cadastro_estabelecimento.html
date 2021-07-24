@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de estabelecimento</title>
+
+    <style>
+        body {
+            background-color: #00D0B3;
+        }
+
+        form {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        #titulo {
+            color: white;
+        }
+
+        hr {
+            border-top: 2px solid #00D0B3;
+        }
+
+        input[type=text], input[type=email], input[type=password] {
+            border: 1px solid #00D0B3;
+            border-radius: 4px;
+            margin: 5px 0 5px 0;
+            width: 50%;
+            padding: 10px 15px;
+        }
+        select {
+            border: 1px solid #00D0B3;
+            border-radius: 4px;
+            margin: 5px 0 5px 0;
+            width: 30%;
+            padding: 10px 15px;
+        }
+
+        input[type=button] {
+            border: 1px solid #00D0B3;
+            background-color: white;
+            color: #00D0B3;
+            border-radius: 4px;
+            margin: 5px 0 5px 0;
+            padding: 10px 15px;
+        }
+
+        input[type=submit] {
+            border: 1px solid #00D0B3;
+            background-color: #00D0B3;
+            color: white;
+            border-radius: 4px;
+            margin: 5px 0 5px 0;
+            padding: 10px 15px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 id="titulo">Cadastro de estabelecimento</h1>
+    
+    <form action="cadastro_estabelecimento_extra.html">
+        <label for="nome_estabelecimento">Nome do estabelecimento:</label><br>
+        <input type="text" id="nome_estabelecimento" name="nome_estabelecimento"><br><br>
+
+        <label for="cnpj_estabelecimento">CNPJ:</label><br>
+        <input type="text" id="cnpj_estabelecimento" name="cnpj_estabelecimento"><br><br>
+        
+        <label for="cep_estabelecimento">CEP:</label><br>
+        <input type="text" id="cep_estabelecimento" name="cep_estabelecimento"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="senha">Senha:</label><br>
+        <input type="password" id="senha" name="senha"><br><br>
+
+        <div id="grupo_de_botoes">
+            <input type="button" value="Cancelar">
+            <input type="submit" value="Próximo">
+        </div>
+        
+    </form>
+</body>
+</html>
