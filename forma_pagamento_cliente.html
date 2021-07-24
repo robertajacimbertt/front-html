@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagamento e preferencias</title>
+</head>
+<body>
+  <form action="/action_page.php"> 
+
+    <div>
+      <div style="display: flex;">
+        <div id="escolha_pagamento_div">
+        <span>Cadastrar nova forma de pagamento</span>
+        <br><br>
+        <label for="tipo_pagamento">Selecione o tipo de pagamento:</label>
+        <br>
+        <br><input type="radio" id="metodo_pagamento_cartao_credito" name="metodo_pagamento" value="cartao_credito">
+        <label for="metodo_pagamento_cartao_credito">Cartão de crédito</label>
+        
+        <br><input type="radio" id="metodo_pagamento_cartao_debito" name="metodo_pagamento" value="cartao_debito">
+        <label for="metodo_pagamento_cartao_debito">Cartão de débito</label>
+        
+      </div>
+      <div id="pagamento_form_div">
+        <div id="pagamento_form_credito">
+          <label for="nome_cartao">Nome impresso no cartão:</label>
+          <input type="text" id="nome_cartao" name="nome_cartao">
+
+          <label for="numero_cartao">Número:</label>
+          <input type="text" id="numero_cartao" name="numero_cartao">
+
+          <label for="cvv_cartao">CVV:</label>
+          <input type="text" id="cvv_cartao" name="cvv_cartao">
+        </div>
+        <div id="pagamento_form_debito">
+          <label for="nome_cartao">Nome impresso no cartão:</label>
+          <input type="text" id="nome_cartao" name="nome_cartao">
+
+          <label for="numero_cartao">Número:</label>
+          <input type="text" id="numero_cartao" name="numero_cartao">
+
+          <label for="cvv_cartao">CVV:</label>
+          <input type="text" id="cvv_cartao" name="cvv_cartao">
+        </div>
+       
+      </div>
+      </div>
+      
+      <br>
+      <span>Outras formas de pagamento como boleto e pix serão mostradas na tela de pagamento do produto caso seja aceito pelo restaurante</span>
+    </div>
+    
+    
+    <br><br>
+
+    
+
+    <input type="submit">
+  </form>
+</body>
+</html>
