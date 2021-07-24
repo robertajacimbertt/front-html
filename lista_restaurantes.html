@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #mapa {
+          height:400px;
+          width:400px;
+        }
+      </style>
+    </head>
+</head>
+<body>
+    <div id="mapa"></div>
+    
+  </body>
+  <script>
+
+    function inicializar() {
+      var coordenadas = {lat: -22.912869, lng: -43.228963};
+
+      var mapa = new google.maps.Map(document.getElementById('mapa'), {
+        zoom: 15,
+        center: coordenadas 
+      });
+
+      var marker = new google.maps.Marker({
+        position: coordenadas,
+        map: mapa,
+        title: 'Meu marcador'
+      });
+    }
+  </script>
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=SUA_CHAVE_API_DO_GOOGLE&callback=inicializar">
+  </script>
+</html>
