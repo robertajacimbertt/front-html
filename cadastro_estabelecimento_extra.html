@@ -4,25 +4,107 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro do restaurante</title>
+    <title>Cadastro de estabelecimento</title>
+
+    <style>
+        body {
+            background-color: #00D0B3;
+        }
+
+        form {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        #titulo {
+            color: white;
+        }
+
+        hr {
+            border-top: 2px solid #00D0B3;
+        }
+
+        input[type=text], input[type=email], input[type=password] {
+            border: 1px solid #00D0B3;
+            border-radius: 4px;
+            margin: 5px 0 5px 0;
+            width: 50%;
+            padding: 10px 15px;
+        }
+
+        input[type=text], input[type=email], input[type=password] {
+            border: 1px solid #00D0B3;
+            border-radius: 4px;
+            margin: 5px 0 5px 0;
+            width: 50%;
+            padding: 10px 15px;
+        }
+
+        input[type=button] {
+            border: 1px solid #00D0B3;
+            background-color: white;
+            color: #00D0B3;
+            border-radius: 4px;
+            margin: 5px 0 5px 0;
+            padding: 10px 15px;
+        }
+
+        input[type=submit] {
+            border: 1px solid #00D0B3;
+            background-color: #00D0B3;
+            color: white;
+            border-radius: 4px;
+            margin: 5px 0 5px 0;
+            padding: 10px 15px;
+        }
+
+        input[type=time] {
+            border: 1px solid #00D0B3;
+            border-radius: 4px;
+            margin: 5px 0 5px 0;
+            padding: 10px 15px;
+        }
+
+        select {
+            border: 1px solid #00D0B3;
+            border-radius: 4px;
+            margin: 5px 0 5px 0;
+            width: 30%;
+            padding: 10px 15px;
+        }
+
+    </style>
 </head>
 <body>
-    <h1>Detalhes finais</h1>
+    <h1>Detalhes complementares</h1>
 
     <form action="">
-        <p><label for="hora_funcionamento">Horário de funcionamento:</label>
+
+        <label for="tipo_estabelicimento">Tipo de estabelecimento:</label><br>
+        <select  id="estabelecimentos">
+            <option value="Mercado">Mercado</option>
+            <option value="Restaurante">Restaurante</option>
+            <option value="Lanchonete">Lanchonete</option>
+            <option value="Bistro">Bistro</option>
+            <option value="Outros">Outros</option>    
+        </select>
         
-            <input type="time" id="hora_funcionamento"/>
-            às
-            <input type="time" id="hora_funcionamento"/>
-        </p><br>
+        <br><br>
+
+
+        <label for="hora_funcionamento">Horário de funcionamento do estabelecimento:</label><br>
+        <input type="time" id="hora_funcionamento"/>
+        às
+        <input type="time" id="hora_funcionamento"/>
         
-        <p><label for="hora_coleta">Horário de coleta:</label>
+        <br><br>
         
-            <input type="time" id="hora_coleta"/>
-            às
-            <input type="time" id="hora_coleta"/>
-        </p><br><br>
+        <label for="hora_coleta">Horário de coleta dos produtos:</label><br>
+        <input type="time" id="hora_coleta"/>
+        às
+        <input type="time" id="hora_coleta"/>
+        <br>
 
         <label for="descricao_negocio">Descrição dos produtos oferecidos:</label>
         <textarea name="descricao_negocio" id="descricao_negocio" cols="100" rows="10"></textarea><br><br>
