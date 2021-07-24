@@ -25,15 +25,7 @@
             border-top: 2px solid #00D0B3;
         }
 
-        input[type=text], input[type=email], input[type=password] {
-            border: 1px solid #00D0B3;
-            border-radius: 4px;
-            margin: 5px 0 5px 0;
-            width: 50%;
-            padding: 10px 15px;
-        }
-
-        input[type=text], input[type=email], input[type=password] {
+        input[type=text], input[type=email], input[type=password], textarea {
             border: 1px solid #00D0B3;
             border-radius: 4px;
             margin: 5px 0 5px 0;
@@ -77,7 +69,7 @@
     </style>
 </head>
 <body>
-    <h1>Detalhes complementares</h1>
+    <h1 id="titulo">Detalhes complementares</h1>
 
     <form action="">
 
@@ -104,9 +96,10 @@
         <input type="time" id="hora_coleta"/>
         às
         <input type="time" id="hora_coleta"/>
-        <br>
+        
+        <br><br>
 
-        <label for="descricao_negocio">Descrição dos produtos oferecidos:</label>
+        <label for="descricao_negocio">Descrição do estabelecimento e e sobre os produtos:</label><br>
         <textarea name="descricao_negocio" id="descricao_negocio" cols="100" rows="10"></textarea><br><br>
         
         <div id="pagamentos">
@@ -122,9 +115,14 @@
             <input type="checkbox" id="pagamento5" name="pagamento5" value="PicPay">
             <label for="pagamento2">PicPay</label><br>
         </div>
-        <br><br>
-        <input type="submit" value="Enviar">
 
+        <br><br>
+
+        <div id="grupo_de_botoes">
+            <input type="button" value="Cancelar">
+            <input type="button" value="Tela anterior">
+            <input type="submit" value="Cadastrar">
+        </div>
     </form>
 
 </body>
