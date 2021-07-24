@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro do restaurante</title>
+</head>
+<body>
+    <h1>Cadastre seu estabelecimento</h1>
+    
+    <form action="cadastro_2.html">
+        <label for="nome_restaurante">Nome do restaurante:</label>
+        <input type="text" id="nome_restaurante"><br><br>
+        
+        <label for="localizacao">CEP:</label>
+        <input type="text" id="localizacao"><br><br>
+        
+        <label for="tipo_estabelicimento">Tipo de estabelecimento:</label>
+        <select  id="estabelecimentos">
+            <option value="Mercado">Mercado</option>
+            <option value="Restaurante">Restaurante</option>
+            <option value="Lanchonete">Lanchonete</option>
+            <option value="Bistro">Bistro</option>
+            <option value="Outros">Outros</option>    
+        </select><br><br>
+
+        
+        <label for="cnpj">CNPJ:</label>
+        <input type="text" id="cnpj"><br><br>
+
+        
+        <label for="senha">senha:</label>
+        <input type="password" id="senha"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email"><br><br>
+
+        <input type="submit" value="Próximo">
+    </form>
+</body>
+</html>
