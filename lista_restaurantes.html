@@ -13,28 +13,15 @@
       </style>
     </head>
 </head>
-<body>
-    <div id="mapa"></div>
-    
-  </body>
-  <script>
-
-    function inicializar() {
-      var coordenadas = {lat: -22.912869, lng: -43.228963};
-
-      var mapa = new google.maps.Map(document.getElementById('mapa'), {
-        zoom: 15,
-        center: coordenadas 
-      });
-
-      var marker = new google.maps.Marker({
-        position: coordenadas,
-        map: mapa,
-        title: 'Meu marcador'
-      });
-    }
-  </script>
-  <script async defer
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsQYnN1nUifHc3BVjqORDZAjW7J8QWxAQ&callback=inicializar">
-  </script>
+<body>    
+<iframe
+  width="600"
+  height="450"
+  style="border:0"
+  loading="lazy"
+  allowfullscreen
+  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDZhLfgBT_gLS-vkiiRH_IprE2-Plt_CTk
+    &q=Space+Needle,Seattle+WA">
+</iframe>
+</body>
 </html>
