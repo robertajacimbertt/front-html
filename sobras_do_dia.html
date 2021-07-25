@@ -27,7 +27,7 @@
         border: 1px solid #00D0B3;
         border-radius: 4px;
         margin: 5px 0 5px 0;
-        width: 50%;
+        width: 90%;
         padding: 10px 15px;
       }
 
@@ -37,7 +37,7 @@
         color: #00D0B3;
         border-radius: 4px;
         margin: 5px 0 5px 0;
-        padding: 10px 15px;
+        padding: 5px 10px;
       }
 
       input[type=submit] {
@@ -55,13 +55,13 @@
     <h1 id="titulo">Novo item</h1>
     <form>
       <div id="local_coleta_div">
-        <span>Local padrão de coleta:</span>
+        <span>Local padrão de coleta:</span><br>
         <label>Rua Nove, numero 333. Jardim Boa vista - SP. 13098-765 </label><br>
         <button id="local_coleta_form" name="local_coleta_form">Mudar local de coleta</button>
       </div>
-      <br><br>
+      <br>
       <div id="horario_coleta_div">
-        <span>Horário padrão de coleta:</span>
+        <span>Horário padrão de coleta:</span><br>
         <label>Das 17:00 até às 20:00</label><br>
         <button>Mudar horário de coleta</button>
       </div>
@@ -70,7 +70,15 @@
         <label for="quantity">Quantidade de estoque disponível:</label><br>
         <input type="number" id="quantity" name="quantity" min="1" max="10">
       </div>
-      <br><br>
+      <br>
+      <div id="venda_doacao_div">
+        <label for="quantity">Venda ou doação?</label><br>
+        <input type="radio" id="venda" name="tipo_disponibilizacao" value="Venda">
+        <label for="venda">Venda</label><br>
+        <input type="radio" id="doacao" name="tipo_disponibilizacao" value="Doação">
+        <label for="doacao">Doação</label><br>
+      </div>
+      <br>
       <div id="opcional_div">
         <p>Opcional:</p>
         <label for="descricao">Comentários ou descriçoes relevantes sobre o produto de hoje:</label><br>
