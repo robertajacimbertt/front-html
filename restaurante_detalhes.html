@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Restaurantes</title>
+        <style>
+            #banner_imagem {
+                position: relative;
+                text-align: center;
+            }
+            #banner_imagem>img {
+                width: 100%;
+            }
+            h2 {
+                margin-left: -10px;
+                margin-right: -10px;
+                color: white;
+                background-color: #00D0B3;
+                padding: 5px 10px;
+                text-align: center;
+            }
+            #seta {
+                float: right;
+            }
+            #ingredientes {
+                color: #00D0B3;
+                font-size: 18pt;
+                padding: 10px 10px 10px 10px;
+                border-top: 1px solid #00D0B3;
+                border-bottom: 1px solid #00D0B3;
+            }
+            #banner_avaliacao {
+                background-color: #dcf5ef;
+                border-radius: 10px;
+                padding: 10px 20px;
+                margin: 20px 0;
+                text-align: center;
+            }
+
+            #banner_titulo {
+                font-size: 18pt;
+                color: #00D0B3;
+            }
+
+            #banner_corpo {
+                font-size: 14pt;
+            }
+            hr {
+                border: 1px solid #00D0B3;
+            }
+            input[type=button] {
+                border: 1px solid #00D0B3;
+                background-color: #00D0B3;
+                color: white;
+                border-radius: 4px;
+                margin: 5px 0 5px 0;
+                padding: 10px 15px;
+            }
+
+            h3 {
+                position: absolute;
+                top: -20px;
+                color: white;
+                font-size: 25pt;
+                left: 100px;
+            }
+            #preco {
+                float: right;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="banner_imagem">
+            <img src="./churras.png" alt="">
+            <h3>Churras</h3>
+        </div>
+        <div>
+            <div id="banner_descricao">
+                <span>Marmita de churrasco</span> <span id="preco">de: R$21,00</span>
+                <br>
+                <span>Hoje 14:30 - 15:00</span> <span id="preco">por: R$8,00</span>
+            </div>
+            <h2>4 COMBOS RESTANTES</h1>
+            <div id="ingredientes">
+                <span>Ingredientes</span>
+                <span id="seta">></span>
+            </div>
+            <div id="banner_avaliacao">
+                <span id="banner_titulo">As pessoas adoram o combo</span><br>
+                <span id="banner_corpo">90% classificou a primeira compra com 4 em 5 estrelas.</span>
+                <hr>
+                <span id="banner_titulo">Destaques</span><br>
+                <span id="banner_corpo">Boa quantidade de comida</span><br>
+                <span id="banner_corpo">Equipe amigável</span><br>
+                <span id="banner_corpo">Boa variedade de comida</span>
+            </div>
+            <div id="grupo_de_botoes">
+                <input type="button" value="Comprar" >
+            </div>
+        </div>
+    </body>
+
+</html>
