@@ -10,6 +10,36 @@
       #resultados, #fim{
         visibility: hidden;
       }
+      body {
+            background-color: #00D0B3;
+            margin: 0;
+            display: flex;
+            flex-direction: column
+        }
+       #titulo {
+            color: white;
+            margin: auto;
+        }
+      div#resultados{
+        background-color: white;
+        padding: 10px;
+        border-radius: 10px;
+        width: 800px;
+        margin: auto;
+      }
+      div#filtros{
+        background-color: white;
+        padding: 10px;
+        border-radius: 15px;
+        width: 800px;
+        margin: 10px auto;
+        
+      }
+      iframe{
+        margin: auto;
+        padding: 10px;
+      }
+
     
     </style>
     
@@ -24,7 +54,7 @@
     src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDJbDPyAYoxZNuGDf-rbN4A3MXHmrp7sMw
       &q=Space+Needle,Seattle+WA">
   </iframe>
-  <h1>Filtros</h1>
+  <h1 id="titulo">Filtros</h1>
   <div id="filtros">
     
     <label for="filtros_escolhas">Tipo de Comida</label>
@@ -60,7 +90,7 @@
       <input type="checkbox" name="close" id="close">
     </div>
 
-    <input type="submit" name="submit" id="aplicar" value="Aplicar"  onclick="mostrar()">
+    <input type="submit" name="submit" id="aplicar" value="Aplicar"  onclick="mostrar()"><br><br>
   </div>
   <div id="resultados">
     <h1>Resultados</h1>
