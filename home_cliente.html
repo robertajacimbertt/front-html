@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Restaurantes</title>
+        <style>
+            #banner {
+                background-color: #dcf5ef;
+                border-radius: 10px;
+                padding: 10px 20px;
+                margin: 20px 0;
+                text-align: center;
+            }
+
+            #banner_titulo {
+                font-size: 18pt;
+            }
+
+            #banner_corpo {
+                font-size: 14pt;
+            }
+
+            #scroll_lateral {
+                overflow: auto;
+                white-space: nowrap;
+            }
+
+            #card {
+                border-radius: 10px;
+                box-shadow: 5px 5px 5px 5px lightgrey;
+                width: 300px;
+                display: inline-block;
+                margin-bottom: 20px;
+                margin-right: 20px;
+            }
+
+            #card_body {
+                padding: 10px;
+            }
+
+            #card_titulo {
+                font-size: 18pt;
+            }
+
+            #card_header {
+                position: relative;
+                text-align: center;
+            }
+
+            #card_header>img {
+                width: 300px;
+                height: 150px;
+            }
+
+            #tag_preco {
+                position: absolute;
+                bottom: 10px;
+                right: 10px;
+                background-color: #00D0B3;
+                padding: 5px 10px;
+                border-radius: 6px;
+                color: white;
+            }
+            
+            #card_quantidade {
+                float: right;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="banner">
+            <img src="./food.png" alt="icone com desenho de comidas dentro do cesto" width="50px" height="50px" /><br>
+            <span id="banner_titulo">Resta apenas alguns combos</span>
+            <span id="banner_corpo">Corre! Evite o desperdício alimentar na sua região e leve um combo!</span>
+        </div>
+        <div>
+            <div id="vitrine">
+                <h3>Combos na sua área</h3>
+                <div id="scroll_lateral">
+
+                    <div id="card">                        
+                        <div id="card_header">
+                            <img src="./feijoada.png">
+                            <span id="tag_preco">R$8,00</span>
+                        </div>
+                        <div id="card_body">
+                            <span id="card_titulo">Fogão a lenha</span> <br>
+                            <span id="card_descricao">Marmitas do almoço</span><br>
+                            <span id="card_data">Hoje 14:00 18:30 - 1,1km</span> <span id="card_quantidade">Qnt: 6</span>
+                        </div>
+                    </div>
+                    <div id="card">                        
+                        <div id="card_header">
+                            <img src="./pamonha.png">
+                            <span id="tag_preco">R$8,00</span>
+                        </div>
+                        <div id="card_body">
+                            <span id="card_titulo">Fogão a lenha</span> <br>
+                            <span id="card_descricao">Marmitas do almoço</span><br>
+                            <span id="card_data">Hoje 14:00 18:30 - 1,1km</span> <span id="card_quantidade">Qnt: 6</span>
+                        </div>
+                    </div>
+                    <div id="card">                        
+                        <div id="card_header">
+                            <img src="./churras.png">
+                            <span id="tag_preco">R$8,00</span>
+                        </div>
+                        <div id="card_body">
+                            <span id="card_titulo">Fogão a lenha</span> <br>
+                            <span id="card_descricao">Marmitas do almoço</span><br>
+                            <span id="card_data">Hoje 14:00 18:30 - 1,1km</span> <span id="card_quantidade">Qnt: 6</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+            <br><br>
+
+            <div id="vitrine">
+                <h3>Combos na sua área</h3>
+                <div id="scroll_lateral">
+
+                    <div id="card">                        
+                        <div id="card_header">
+                            <img src="./pamonha.png">
+                            <span id="tag_preco">R$8,00</span>
+                        </div>
+                        <div id="card_body">
+                            <span id="card_titulo">Fogão a lenha</span> <br>
+                            <span id="card_descricao">Marmitas do almoço</span><br>
+                            <span id="card_data">Hoje 14:00 18:30 - 1,1km</span> <span id="card_quantidade">Qnt: 6</span>
+                        </div>
+                    </div>
+                    <div id="card">                        
+                        <div id="card_header">
+                            <img src="./feijoada.png">
+                            <span id="tag_preco">R$8,00</span>
+                        </div>
+                        <div id="card_body">
+                            <span id="card_titulo">Fogão a lenha</span> <br>
+                            <span id="card_descricao">Marmitas do almoço</span><br>
+                            <span id="card_data">Hoje 14:00 18:30 - 1,1km</span> <span id="card_quantidade">Qnt: 6</span>
+                        </div>
+                    </div>
+                    <div id="card">                        
+                        <div id="card_header">
+                            <img src="./churras.png">
+                            <span id="tag_preco">R$8,00</span>
+                        </div>
+                        <div id="card_body">
+                            <span id="card_titulo">Fogão a lenha</span> <br>
+                            <span id="card_descricao">Marmitas do almoço</span><br>
+                            <span id="card_data">Hoje 14:00 18:30 - 1,1km</span> <span id="card_quantidade">Qnt: 6</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <br><br>
+
+            <div id="vitrine">
+                <h3>Favoritos</h3>
+                <div id="scroll_lateral">
+
+                    <div id="card">                        
+                        <div id="card_header">
+                            <img src="./churras.png">
+                            <span id="tag_preco">R$8,00</span>
+                        </div>
+                        <div id="card_body">
+                            <span id="card_titulo">Fogão a lenha</span> <br>
+                            <span id="card_descricao">Marmitas do almoço</span><br>
+                            <span id="card_data">Hoje 14:00 18:30 - 1,1km</span> <span id="card_quantidade">Qnt: 6</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
