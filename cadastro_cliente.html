@@ -6,45 +6,83 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cadastro cliente</title>
 
+  <style>
+    body {
+        background-color: #00D0B3;
+    }
 
+    form {
+        background-color: white;
+        border-radius: 10px;
+        padding: 20px;
+    }
+
+    #titulo {
+        color: white;
+    }
+
+    input[type=text], input[type=email], input[type=password] {
+        border: 1px solid #00D0B3;
+        border-radius: 4px;
+        margin: 5px 0 5px 0;
+        width: 90%;
+        padding: 10px 15px;
+    }
+
+    input[type=submit] {
+        border: 1px solid #00D0B3;
+        background-color: #00D0B3;
+        color: white;
+        border-radius: 4px;
+        margin: 5px 0 5px 0;
+        padding: 10px 15px;
+    }
+
+  </style>
 </head>
 <body>
-  
+  <h1 id="titulo">Cadastro</h1>
   <form action="/action_page.php"> 
 
     <div id="dados_pessoais_div">
-      <label for="nome">Nome</label>
-      <input type="text" id="nome" name="nome" >
+      <label for="nome">Nome:</label><br>
+      <input type="text" id="nome" name="nome">
 
-      <label for="email">Email</label>
+      <br><br>
+
+      <label for="email">Email:</label><br>
       <input type="text" id="email" name="email">
 
-      <label for="telefone">Telefone</label>
+      <br><br>
+
+      <label for="telefone">Telefone:</label><br>
       <input type="text" id="telefone" name="telefone">
     </div>
     
     <br><br>
 
     <div id="local_div">
-      <label for="cep">CEP</label>
+      <label for="cep">CEP:</label><br>
       <input type="text" id="cep" name="cep">
     </div>
     
     <br><br>
 
     <div id="senha_div">
-      <label for="senha">Senha</label>
+      <label for="senha">Senha:</label><br>
       <input type="password" id="senha" name="senha">
     </div>
 
     <br><br>
 
     <div id="notificacoes_div">
+      <input type="checkbox" id="permitir_notificacoes" name="permitir_notificacoes" value="sim">
       <label for="permitir_notificacoes">Você permite o envio de notificações sobre disponibilidades perto de você?</label>
-      <input type="password" id="permitir_notificacoes" name="permitir_notificacoes">
     </div>
 
-    <input type="submit" >
+    <br><br>
+
+    <input type="submit">
   </form>
 </body>
 </html>
