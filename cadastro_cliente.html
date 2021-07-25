@@ -38,10 +38,84 @@
         padding: 10px 15px;
     }
 
+    li{
+      padding: 10px;
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+    }
+    img{
+      width: 5%;
+      width: 3%;
+      padding: 3px;
+    }
+    div.opcoes-menu{
+      height: max-content;
+      position: relative;
+      bottom: -15px;
+    }
+    div#menu_interativo{
+      visibility: hidden;
+      position:absolute;
+
+    }
+    li:hover{
+      background-color: rgba(67, 155, 92, 0.405);
+      transition-delay: 10ms;
+    }
+    #menu:hover{
+      background-color: rgba(67, 155, 92, 0.405);
+      transition-delay: 10ms;
+    }
+   
+    #check{
+      display: none;
+    }
+
+    #check:checked ~ #menu_interativo{
+      visibility: visible;
+      position: relative;
+
+    }
+
   </style>
 </head>
 <body>
   <h1 id="titulo">Cadastro</h1>
+
+  <input type="checkbox"  id="check">
+  <label for="check"><img id="menu" src="images/menu-icon.png"></label>
+  <div id="menu_interativo">  
+    <ul>
+      <li>
+        <img src="images/home.png" alt="">
+        <div class="opcoes-menu">Home</div>
+      </li>
+        <li><img src="images/favorito.png" alt=""> 
+        <div class="opcoes-menu">Favorite</div>
+      </li>
+        <li><img src="images/mapa.png" alt="">
+        <div class="opcoes-menu">Mapa</div>
+      </li>
+      <li>
+        <img src="images/perfil.png" alt="">
+        <div class="opcoes-menu">Perfil</div>
+      </li>
+      <li>
+        <img src="images/suporte.png" alt="">
+        <div class="opcoes-menu">Suporte</div>
+      </li>
+      <li>
+        <img src="images/configuração.png" alt="">
+        <div class="opcoes-menu">Configurações</div>
+      </li>
+      <li>
+        <img src="images/shutdown.png" alt="">
+        <div class="opcoes-menu">Sair</div>
+      </li>
+    </ul>
+  </div>
+
   <form action="/action_page.php"> 
 
     <div id="dados_pessoais_div">

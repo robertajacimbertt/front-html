@@ -25,6 +25,7 @@
         border-radius: 10px;
         width: 50%;
         margin: auto;
+        position: absolute;
       }
       div#filtros{
         background-color: white;
@@ -166,6 +167,7 @@
   /*função para revelar as opções filtradas*/
   function mostrar(){
     document.getElementById("resultados").style.visibility = "visible";
+    document.getElementById("resultados").style.position = "relative";
   }
 
   function fim(){
