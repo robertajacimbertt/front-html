@@ -9,3 +9,5 @@ Assim os restaurantes nao precisam descartar boa parte da comida que nao foi ven
 Os consumidores podem comprar a um preço mais baixo ou ainda receber de graça (caso o restaurante doe).
 
 # Este repositorio:
+
+Este repossitorio possui apenas aas telas mockadas em HTML + CSS, por isso para ver funcionando basta fazer o download ou clone do repositorio e abrir os arquivos no seu browser. 
